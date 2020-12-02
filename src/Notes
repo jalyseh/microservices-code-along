@@ -1,0 +1,20 @@
+Identifying Boundaries:
+
+    Getting it wrong can be costly
+    - poor performance
+    - hard to change
+
+    Start from an existing system
+    - identify loosely coupled components
+    - identify data seams
+
+    - Domain Driven Design
+        - identify up larges domains
+        - microservices do not share models
+
+Building Microservices
+
+    *HOSTING OPTIONS
+        -Virtual Machines
+        -Platform as a Service
+        -Containers
