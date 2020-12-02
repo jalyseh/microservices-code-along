@@ -18,3 +18,33 @@ Building Microservices
         -Virtual Machines
         -Platform as a Service
         -Containers
+            -install dependencies
+            -set up configurations
+            -automate developer process
+
+    *SOURCE CONTROL REPOSITORY
+        -avoid tight coupling
+
+    AUTOMATED TESTS
+        - unit tests - fast to run, high code coverage
+        - service-level tests - single service isolation, mock collaborators
+        - end-to-end level - production like environment
+
+    Standardizing Microservices
+        - logging
+        - health checks
+        - configuration
+        - authentification
+        - build scripts
+
+    Benefits of Service Templates
+        -reduce time
+        -consistent tooling
+        -increased developer productivity
+        -ability to run in isolation
+        -run in full context of app
+
+    COMMUNICATION BETWEEN MICROSERVICES
+        -
+
+
