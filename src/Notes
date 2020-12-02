@@ -45,6 +45,10 @@ Building Microservices
         -run in full context of app
 
     COMMUNICATION BETWEEN MICROSERVICES
-        -
+        -Synchonrous
+        -Asynchronous
+        *Transient errors are expected
+        *cascading failures (RETRY!)
+        
 
 
