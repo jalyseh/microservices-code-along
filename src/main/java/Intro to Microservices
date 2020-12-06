@@ -1,0 +1,92 @@
+
+MONOLITHS
+ * typically huge – more 100, 000 line of code
+ * all the functionalities of a project exists in a single codebase
+
+In monolith application, there are few challenges:
+
+- For a large application, it is difficult to understand the complexity and make code changes fast and correctly, sometimes it becomes hard to manage the code.
+- As the size of the application increases, its start-up and deployment time also increases.
+- Applications need extensive manual testing to ensure the impact of changes.
+- It is very difficult to adopt any new technology which is well suited for a particular functionality as it affects the whole application, both in terms of time and cost.
+- It is not very reliable as a single bug in any module can bring down the whole monolithic application.
+- For small change, the whole application needs to be built and deployed.
+- The heavy application slows down start-up time.
+
+MICROSERVICES
+
+    Principles:
+        - Single responsibility
+        - Built around business capabilities
+        - Design for failure
+
+    * a form of Service-Oriented Architecture Style
+    * by design, are “loosely coupled” with other collaborating services.
+        - Coupling refers to the degree of direct knowledge that one component has of another. Messages consist of instructions bound in metadata and encoded in a data-interchange format such as JSON.
+    * Apps are built as a collection of smaller services vs. one whole app
+    * Several independent apps that run on their own (can be created using different coding + languages)
+        - function as both data producers and data consumers, particularly between service boundaries within a virtualized cloud environment.
+        - when grouped together, provide all the functionalities for the monolithic app
+
+        * The fundamental components of a microservice consists of:
+
+        - Message Dispatcher or more simply, a Producer, which publishes messages to a service bus (sends data)
+        - An Event Listener or Consumer, which receives messages from service bus(receives + performs some operation on data)
+        - Exchanges pushes data from the producer into a queue
+        - Business logic (the data that passes between Producers and Consumers).
+
+BENEFITS:
+    - allow for larger + more complex applications
+    - provide better app management
+    - improve your architecture’s scalability
+    - provide flexibility in terms of infrastructure + deployment
+        * application traffic is routed to collections of services that may be distributed across:
+            CPU’s, disks, machines and networks as opposed to a single monolithic platform designed to manage all traffic.
+        * loosely coupled microservices allow deployment times to be reduced
+    - less constrained to the same platform, language, operating system, or build environment
+    - Small Modules:
+        Application is broken into smaller modules which are easy for developers to code and maintain.
+    - Easier Process Adaption:
+        By using microservices, new Technology & Process Adaption becomes easier. You can try new technologies with the newer microservices that we use.
+    - Independent scaling:
+        Each microservice can scale independently via X-axis scaling (cloning with more CPU or memory) and Z-axis scaling (sharding), based upon their needs.
+    - Unaffected:
+        Large applications remain largely unaffected by the failure of a single module.
+    - DURS:
+        Each service can be independently DURS (deployed, updated, replaced, and scaled)
+
+DISADVANTAGES:
+    - Configuration Management:
+        As it becomes granular the headache comes for configuring the services and monitoring those.
+        You need to maintain configurations for hundreds of components across environments.
+    - Debugging:
+        Tracking down the service failure is painstaking job.
+        You might need to look into multiple services across different components.
+        Centralized Logging and Dashboards are essential to make it easy to debug problems.
+    - Automation:
+        Because there are a number of smaller components instead of a monolith
+        you need to automate everything:  Builds, Deployment, Monitoring etc.
+    Testing:
+        Needs a greater effort for end to end testing as it needs all the dependent services to be up and running.
+
+WHY SPRINGBOOT?
+
+Spring Boot: This is probably the best Java microservices framework that works on top of languages for:
+    - Inversion of Control,
+    -  Aspect Oriented Programming,
+    -  and others.
+
+    * Spring Boot has all the infrastructures that your applications needs.
+    * It does not matter if you are writing apps for security, configuration, or big data; there is a Spring Boot project for it.
+
+        Spring Boot projects include:
+
+        Spring IO Platform: Enterprise-grade distribution for versioned applications.
+        Spring Framework: For transaction management, dependency injection, data access, messaging, and web apps.
+        Spring Cloud: For distributed systems and used for building or deploying your microservices.
+        Spring Data: For microservices that are related to data access, be it map-reduce, relational or non-relational.
+        Spring Batch: For high levels of batch operations.
+        Spring Security: For authorization and authentication support.
+        Spring REST Docs: For documenting RESTful services.
+        Spring Social: For connecting to social media APIs.
+        Spring Mobile: For mobile Web apps.

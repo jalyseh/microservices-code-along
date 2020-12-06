@@ -49,6 +49,6 @@ Building Microservices
         -Asynchronous
         *Transient errors are expected
         *cascading failures (RETRY!)
-        
+
 
 
